@@ -4,4 +4,4 @@ metadata:
   labels:
     app.kubernetes.io/name: mtv-integrations
   name: mtv-integrations-manager
-  {{ `.Values.global.namespace` }}
+  namespace: {{ `.Values.global.namespace` }}
