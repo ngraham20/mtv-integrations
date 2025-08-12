@@ -51,7 +51,7 @@ spec:
           kind: Deployment
           metadata:
             name: mtv-integrations-controller
-            namespace: {{ `{{INSTALL_NAMESPACE}}` }}
+            namespace: {{ .Values.global.namespace }}
             labels:
               app: mtv-integrations
               ocm-antiaffinity-selector: "mtvintegrations"

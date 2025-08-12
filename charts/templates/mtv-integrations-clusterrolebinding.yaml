@@ -11,4 +11,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: mtv-integrations-manager
-  namespace: {{ `{{INSTALL_NAMESPACE}}` }}
+  namespace: {{ .Values.global.namespace }}

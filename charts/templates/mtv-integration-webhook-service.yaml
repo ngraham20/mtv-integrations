@@ -4,7 +4,7 @@ metadata:
   annotations:
     service.beta.openshift.io/serving-cert-secret-name: mtv-plan-webhook-server-cert
   name: mtv-plan-webhook-service
-  namespace: {{ `{{INSTALL_NAMESPACE}}` }}
+  namespace: {{ .Values.global.namespace }}
 spec:
   ports:
   - port: 443
