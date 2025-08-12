@@ -17,4 +17,4 @@ spec:
     type: Placements
     placements:
     - name: openshift-cnv
-      namespace: "{{ `{{INSTALL_NAMESPACE}}` }}"
+      namespace: {{ `{{INSTALL_NAMESPACE}}` }}
