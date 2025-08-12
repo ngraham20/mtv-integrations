@@ -10,7 +10,7 @@ webhooks:
   clientConfig:
     service:
       name: mtv-plan-webhook-service
-      namespace: {{ `{{INSTALL_NAMESPACE}}` }}
+      namespace: "{{ `{{INSTALL_NAMESPACE}}` }}"
       path: /validate-plan
   failurePolicy: Fail
   name: validate.mtv.plan
