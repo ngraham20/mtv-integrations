@@ -17,4 +17,4 @@ spec:
     type: Placements
     placements:
     - name: openshift-mtv
-      namespace: {{ `.Values.global.namespace` }}
+      namespace: {{ `{{  .Values.global.namespace }}` }}
